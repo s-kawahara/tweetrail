@@ -11,3 +11,5 @@ Railsの学習のため、TwitterのようなWebアプリケーションを作�
 新規登録関係はここ（https://cyllabus.jp/courses/LVlXWNb8GcWTKy8x1gHS5g）を参考に作成した
 bootstrapはここ（http://qiita.com/mm36/items/564fe34f57d9f9e3acf5）を丸ごとぶち込んだ感じで
 gitって素晴らしい・・・まだ全然活用できてないから勉強あるのみ
+ひとまず、トップページとユーザー一覧ページを作成した。
+次回はツイート投稿のシステムを設計する。
