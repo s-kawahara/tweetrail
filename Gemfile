@@ -9,6 +9,13 @@ end
 gem 'sorcery'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+
+# Bootstrap
+gem 'less-rails'
+gem 'therubyracer'
+gem 'twitter-bootstrap-rails', '~> 2.2.8'
+gem 'font-awesome-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record

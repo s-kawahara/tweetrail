@@ -11,7 +11,11 @@ module Tweetrail
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     config.i18n.default_locale = :ja
-    
+
     config.sass.preferred_syntax = :sass
+
+    config.generators do |g|
+      g.template_engine :haml
+    end
   end
 end
