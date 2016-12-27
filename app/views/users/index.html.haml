@@ -1,9 +1,21 @@
-%h1 Listing users
-
-%table
-  %tr
-    %th
-
-  - @users.each do |user|
+- model_class = User
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+%table.table.table-striped
+  %thead
     %tr
-      %td= link_to user.name, user
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:nickname)
+      %th= model_class.human_attribute_name(:bio)
+      %th= model_class.human_attribute_name(:created_at)
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.id
+        %td= link_to user.name, user_path(user)
+        %td= user.nickname
+        %td= user.bio
+        %td= user.created_at
+        %td

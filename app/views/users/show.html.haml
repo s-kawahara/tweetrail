@@ -1,5 +1,20 @@
-%p#notice= notice
+- model_class = User
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.titleize
 
 
+%p
+  %strong= model_class.human_attribute_name(:name) + ':'
+  %br
+  = @user.name
+%p
+  %strong= model_class.human_attribute_name(:nickname) + ':'
+  %br
+  = @user.nickname
+%p
+  %strong= model_class.human_attribute_name(:bio) + ':'
+  %br
+  = @user.bio
 
-= link_to 'Back', users_path
+.form-actions
+  = link_to t('.back', :default => t("helpers.links.back")), users_path, :class => 'btn'
